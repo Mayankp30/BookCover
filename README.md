@@ -27,6 +27,7 @@ Clone the app using:
 $ git clone [git-repo-url] BookCover
 $ cd BookCover
 $ npm install
+$ node app.js
 ```
 ### Todos
 
