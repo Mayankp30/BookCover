@@ -1,0 +1,33 @@
+{
+  "user1": {
+    "title": "STEP 2 CLINICAL SKILLS",
+    "subtitle": "",
+    "edition": "FOURTH EDITION",
+    "points": {
+      "point1":"Exert advice on how to master the exam",
+      "point2":"Realistic practice scenarios",
+      "point3":"Proven strategies for doctor-patient communication and history taking",
+      "point4":"Effective tactics for the physical exam",
+      "point5":"Exclusive tips for writing the patient note",
+      "point6":"35 practice cases with answers and explanations"
+    },
+    "brand-image-url": "1.jpg",
+    "id": 1,
+    "url": "background1.jpg"
+  },
+  "user2": {
+    "title": "STEP 2 CS: COMPLEX CASES",
+    "subtitle": "35 CASES YOU ARE LIKELY TO SEE ON THE EXAM",
+    "edition": "SECOND EDITION",
+    "points": {
+      "point1":"Exert advice on how to master the most complex cases you'll see",
+      "point2":"Topics include work physicals, healthy check-ups, telephone calls, and end-of-life issues",
+      "point3":"In-depth coverage of the initial approach to complex cases and patient note-writing",
+      "point4":"Bonus: Tear out flashcard section based upon doorway information",
+      "point5":"Exclusive tips for writing the patient note"
+    },
+    "brand-image-url": "2.jpg",
+    "id": 2,
+    "url": "background2.jpg"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name"         : "node-book",
+  "version"      : "0.0.1",
+  "description"  : "Simple node book cover application.",
+  "scripts" 	 : {
+    "start"         : "app.js"
+  },
+  "author"       : "Saurabh",
+  "dependencies" : {
+    "express"         : "~4.13.4"
+	}
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- define angular app -->
+<html ng-app="bookCoverApp">
+<head>
+	<!-- SCROLLS -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<!-- Optimize mobile viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- SPELLS -->
+	<!-- load angular via CDN -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+	<script src="../js/controllers/getDataController.js"></script>
+</head>
+<!-- define angular controller -->
+<body ng-controller="bookCoverAppController as vm" background="../images/bg.jpg" >
+<!-- MAIN CONTENT VIEWS -->
+<div class="main">
+	<!-- select book option -->
+	<div class = "dropdown">
+		<select  ng-model="books" ng-change="vm.fetchData(books)"
+				 ng-options="option.value as option.name for option in options">
+			<option  ng-selected="selected" ng-if="!books" value="">&#45;&#45; Select an option &#45;&#45;</option>
+		</select>
+	</div>
+	<!-- Display data from json object -->
+	<div class="container" >
+		<img class = "image" ng-src="../images/{{vm.url}}" />
+		<div class="title">
+			<strong> {{vm.title}}
+				<strong>
+		</div>
+		<div class="subtitle">
+			<strong> {{vm.subtitle}}
+				<strong>
+		</div>
+		<div class="edition">
+			<strong>  {{vm.edition}}
+				<strong>
+		</div>
+		<div class="points">
+			<ul class= "listpoint" ng-repeat = "point in vm.points"> {{point}} </ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

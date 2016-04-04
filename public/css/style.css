@@ -1,0 +1,86 @@
+div .container {
+    max-width: 60%;
+    max-height: 40%;
+    padding: 20px;
+    margin: 0px auto;
+    position: relative;
+}
+
+div .dropdown {
+    margin-left: 34%;
+    margin-top:2%;
+}
+div .image {
+    outline: 0;
+    max-width: 80%;
+    max-height: 100%;
+}
+
+div .title {
+    position: absolute;
+    top: 32%;
+    left: 22%;
+    width: 100%;
+    color: rgb(173,204,48);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+div .subtitle {
+    position: absolute;
+    top: 37%;
+    left: 15%;
+    width: 100%;
+    color: rgb(255,255,255);
+    font-size: 118%;
+    font-weight: bold;
+}
+
+div .edition {
+    position: absolute;
+    top: 49%;
+    left: 46%;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    }
+
+div .points {
+    position: absolute;
+    top: 55%;
+    left: 37%;
+    width: 36%;
+    color: rgb(255,255,255);
+    font-size: 11px;
+}
+
+ul.listpoint{
+    border-top: 1px solid gray;
+    padding-left: 4%;
+    padding-top: 2%;
+
+}
+
+/*laptop*/
+@media screen and (max-width: 1025px)
+{
+    div .title { font-size: 24px;}
+    div .subtitle { font-size: 14px; left: 21%;}
+    div.edition {font-size: 10px; top: 50%;  left: 58%;}
+}
+/*tablet*/
+@media screen and (max-width: 768px)
+{
+    div .title { font-size: 17px;}
+    div .subtitle { font-size: 10px; left: 21%;}
+    div.edition {font-size: 9px; top: 50%;  left: 56%;}
+    div .points { font-size: 9px;}
+}
+/*iphone 6s plus*/
+@media screen and (max-width: 425px)
+{
+    div.title { font-size: 8px; top: 33%;  left: 25%;  }
+    div .subtitle { font-size: 6px; left: 18%;}
+    div.edition {font-size: 6px; top: 49%;  left: 52%;}
+    div .points { font-size: 4px;}
+    div .dropdown{ margin-left: 20%; margin-top:2%;}
+}
